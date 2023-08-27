@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../static/css/style.css">
+  <title>Movie Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="top-container">
+    <header>
+      <div class="row header">
+        <div class="col">
+          <div class="logo">Movie <img class="logo-popcorn" src="./../static/images/popcorn.png"> Generator</div>
+          <div class="h6 logo-subtitle">Find a movie for both of you!</div>
+        </div>
+        <div class="col" style="padding: 1rem 1rem;">
+          <div class="h91">Blue: {{user_1_name}}</div>
+          <div class="h92">Green: {{user_2_name}}</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="row">
+      <div style="margin-bottom: 25px;" class="subtitle col h3">These are your top 3 movies! Scroll down to discover why ...</div>
+    </div>
+
+  </div>
+
+  <div class="header2" id="myHeader">
+    
+    <div class="row content">
+      <div class="col h9">{{movie_1.name}}</div>
+      <div class="col h9">{{movie_2.name}}</div>
+      <div class="col h9">{{movie_3.name}}</div>
+    </div>
+  </div>
+
+  <div class="content2">
+    <main>
+      <div class="">
+
+        <div class="row content">
+          <div id="movie-header-1" class="col movie-header">
+            <div class="movie-image d-flex justify-content-center">
+              <img src="https://image.tmdb.org/t/p/original/{{movie_1.poster_path}}" alt="No poster found" height="300">
+            </div>
+            
+
+            <div class="movie-refresh-button">
+              <button onclick="location.href = '/result-page/refresh1';" id="myButton" class="btn btn-secondary">Replace movie</button>
+            </div>
+          </div>
+          <div id="movie-header-2" class="col movie-header">
+            <div class="movie-image d-flex justify-content-center">
+              <img src="https://image.tmdb.org/t/p/original/{{movie_2.poster_path}}" alt="No poster found" height="300" class="center">
+            </div>
+
+            <div class="movie-refresh-button">
+              <button onclick="location.href = '/result-page/refresh2';" id="myButton" class="btn btn-secondary">Replace movie</button>
+            </div>
+          </div>
+          <div id="movie-header-3" class="col movie-header">
+            <div class="movie-image d-flex justify-content-center">
+              <img src="https://image.tmdb.org/t/p/original/{{movie_3.poster_path}}" alt="No poster found" height="300">
+            </div>
+
+            <div class="movie-refresh-button">
+              <button onclick="location.href = '/result-page/refresh3';" id="myButton" class="btn btn-secondary">Replace movie</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row rowSubtitle">
+          <span class="gray-horizontal col"></span>
+          <div class="subtitle col h3">Combined Preference</div>
+          <span class="gray-horizontal col"></span>
+        </div>
+        <div class="col h8">These percentages indicate how well the movie matches with both of your profiles.</div>
+        <div class="row content">
+          <div class="subtitle col h7">{{movie_1.combined_pref}}%</div>
+          <div class="subtitle col h7">{{movie_2.combined_pref}}%</div>
+          <div class="subtitle col h7">{{movie_3.combined_pref}}%</div>
+        </div>
+
+        <div class="row rowSubtitle">
+          <span class="gray-horizontal col"></span>
+          <div class="subtitle col h3">Balance</div>
+          <span class="gray-horizontal col"></span>
+        </div>
+        <div class="col h8">Each colored bar indicates how well the movie matches your individual profiles.</div>
+        <div class="row content">
+
+          <div class="col" style="background: #1f1f1f; border-radius: 5px;padding: 1em; margin: 2em;">
+            <div class="chart">
+              <div class="part percent-{{movie_1.balance_user1}}">
+                <div class="label">{{user_1_name}}</div>
+                <div class="bar blue">aw<div class="label">{{movie_1.balance_user1}}%</div>
+                </div>
+              </div>
+              <div class="part percent-{{movie_1.balance_user2}}">
+                <div class="label">{{user_2_name}}</div>
+                <div class="bar green">aw<div class="label">{{movie_1.balance_user2}}% </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="background: #1f1f1f; border-radius: 5px;padding: 1em; margin: 2em;">
+            <div class="chart">
+              <div class="part percent-{{movie_2.balance_user1}}">
+                <div class="label">{{user_1_name}}</div>
+                <div class="bar blue">aw<div class="label">{{movie_2.balance_user1}}%</div>
+                </div>
+              </div>
+              <div class="part percent-{{movie_2.balance_user2}}">
+                <div class="label">{{user_2_name}}</div>
+                <div class="bar green">aw<div class="label">{{movie_2.balance_user2}}% </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="background: #1f1f1f; border-radius: 5px;padding: 1em; margin: 2em;">
+            <div class="chart">
+              <div class="part percent-{{movie_3.balance_user1}}">
+                <div class="label">{{user_1_name}}</div>
+                <div class="bar blue">aw<div class="label">{{movie_3.balance_user1}}%</div>
+                </div>
+              </div>
+              <div class="part percent-{{movie_3.balance_user2}}">
+                <div class="label">{{user_2_name}}</div>
+                <div class="bar green">aw<div class="label">{{movie_3.balance_user2}}% </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row rowSubtitle">
+          <span class="gray-horizontal col"></span>
+          <div class="subtitle col h3">Movie Characteristics</div>
+          <span class="gray-horizontal col"></span>
+        </div>
+        <div class="col h8">The colors of the circles indicate how well the genre matches the preference of each person individually.</div>
+        
+        <div class="row content">
+          <div class="col test" style="background: #1f1f1f; border-radius: 5px;padding: 1em; margin: 2em;">
+            <div id="donut1" data-genre={{movie_1.bubble1_genre}} class="donut" style="--first: {{bubble_firsts[0]}}; --second: {{bubble_seconds[0]}}; --donut-spacing: 0; --color_1: {{donuts[0][0]}}; --color_1_r: {{donuts[0][1]}}; --color_1_g: {{donuts[0][2]}}; --color_1_b:{{donuts[0][3]}}; --color_2: {{donuts[0][4]}}; --color_2_r: {{donuts[0][5]}}; --color_2_g: {{donuts[0][6]}}; --color_2_b:{{donuts[0][7]}};">
+              <div class="donut__slice donut__slice__first"></div>
+              <div class="donut__slice donut__slice__second"></div>
+              <div class="donut__label">
+                <div class="donut__label__heading">
+                  {{movie_1.bubble1_genre}}
+                </div>
+                <div class="donut__label__sub">
+                  genre
+                </div>
+              </div>
+            </div>
+            <div id="donut2" data-genre={{movie_1.bubble2_genre}} class="donut" style="--first: {{bubble_firsts[1]}}; --second: {{bubble_seconds[1]}}; --donut-spacing: 0; --color_1: {{donuts[1][0]}}; --color_1_r: {{donuts[1][1]}}; --color_1_g: {{donuts[1][2]}}; --color_1_b:{{donuts[1][3]}}; --color_2: {{donuts[1][4]}}; --color_2_r: {{donuts[1][5]}}; --color_2_g: {{donuts[1][6]}}; --color_2_b:{{donuts[1][7]}};">
+              <div class="donut__slice donut__slice__first"></div>
+              <div class="donut__slice donut__slice__second"></div>
+              <div class="donut__label">
+                <div class="donut__label__heading">
+                  {{movie_1.bubble2_genre}}
+                </div>
+                <div class="donut__label__sub">
+                  genre
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col test" style="background: #1f1f1f; border-radius: 5px;padding: 1em; margin: 2em;">
+            <div id="donut3" data-genre={{movie_2.bubble1_genre}} class="donut" style="--first: {{bubble_firsts[2]}}; --second: {{bubble_seconds[2]}}; --donut-spacing: 0; --color_1: {{donuts[2][0]}}; --color_1_r: {{donuts[2][1]}}; --color_1_g: {{donuts[2][2]}}; --color_1_b:{{donuts[2][3]}}; --color_2: {{donuts[2][4]}}; --color_2_r: {{donuts[2][5]}}; --color_2_g: {{donuts[2][6]}}; --color_2_b:{{donuts[2][7]}};">
+              <div class="donut__slice donut__slice__first"></div>
+              <div class="donut__slice donut__slice__second"></div>
+              <div class="donut__label">
+                <div class="donut__label__heading">
+                  {{movie_2.bubble1_genre}}
+                </div>
+                <div class="donut__label__sub">
+                  genre
+                </div>
+              </div>
+            </div>
+            <div id="donut4" data-genre={{movie_2.bubble2_genre}} class="donut" style="--first: {{bubble_firsts[3]}}; --second: {{bubble_seconds[3]}}; --donut-spacing: 0; --color_1: {{donuts[3][0]}}; --color_1_r: {{donuts[3][1]}}; --color_1_g: {{donuts[3][2]}}; --color_1_b:{{donuts[3][3]}}; --color_2: {{donuts[3][4]}}; --color_2_r: {{donuts[3][5]}}; --color_2_g: {{donuts[3][6]}}; --color_2_b:{{donuts[3][7]}};">
+              <div class="donut__slice donut__slice__first"></div>
+              <div class="donut__slice donut__slice__second"></div>
+              <div class="donut__label">
+                <div class="donut__label__heading">
+                  {{movie_2.bubble2_genre}}
+                </div>
+                <div class="donut__label__sub">
+                  genre
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col test" style="background: #1f1f1f; border-radius: 5px;padding: 1em; margin: 2em;">
+            <div id="donut5" data-genre={{movie_3.bubble1_genre}} class="donut" style="--first: {{bubble_firsts[4]}}; --second: {{bubble_seconds[4]}}; --donut-spacing: 0; --color_1: {{donuts[4][0]}}; --color_1_r: {{donuts[4][1]}}; --color_1_g: {{donuts[4][2]}}; --color_1_b:{{donuts[4][3]}}; --color_2: {{donuts[4][4]}}; --color_2_r: {{donuts[4][5]}}; --color_2_g: {{donuts[4][6]}}; --color_2_b:{{donuts[4][7]}};">
+              <div class="donut__slice donut__slice__first"></div>
+              <div class="donut__slice donut__slice__second"></div>
+              <div class="donut__label">
+                <div class="donut__label__heading">
+                  {{movie_3.bubble1_genre}}
+                </div>
+                <div class="donut__label__sub">
+                  genre
+                </div>
+              </div>
+            </div>
+            <div id="donut6" data-genre={{movie_2.bubble2_genre}} class="donut" style="--first: {{bubble_firsts[5]}}; --second: {{bubble_seconds[5]}}; --donut-spacing: 0; --color_1: {{donuts[5][0]}}; --color_1_r: {{donuts[5][1]}}; --color_1_g: {{donuts[5][2]}}; --color_1_b:{{donuts[5][3]}}; --color_2: {{donuts[5][4]}}; --color_2_r: {{donuts[5][5]}}; --color_2_g: {{donuts[5][6]}}; --color_2_b:{{donuts[5][7]}};">
+              <div class="donut__slice donut__slice__first"></div>
+              <div class="donut__slice donut__slice__second"></div>
+              <div class="donut__label">
+                <div class="donut__label__heading">
+                  {{movie_3.bubble2_genre}}
+                </div>
+                <div class="donut__label__sub">
+                  genre
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row rowSubtitle">
+          <span class="gray-horizontal col"></span>
+          <div class="subtitle col h3">Description</div>
+          <span class="gray-horizontal col"></span>
+        </div>
+        <div class="col h8" >A short description to learn more what the movie is about.</div>
+        <div class="row content">
+  
+          <div class="col">
+            <div class="h10">{{movie_1.imdb_tekst}}</div>
+          </div>
+          <div class="col">
+            <div class="h10">{{movie_2.imdb_tekst}}</div>
+          </div>
+          <div class="col">
+            <div class="h10">{{movie_3.imdb_tekst}}</div>
+          </div>
+  
+  
+  
+        </div>
+
+        <div class="row rowSubtitle">
+          <span class="gray-horizontal"></span>
+        </div>
+        <div class="row" style="background: #ffcc13;">
+          <div class="subtitle col h3" style="background: #ffcc13;color: #000000;">You understand why you got recommended these movies, now make a choice:</div>
+        </div>
+        <div class="row" style="background: #ffcc13;">
+          <div class="col h9" style="color: #000000;">{{movie_1.name}}</div>
+          <div class="col h9" style="color: #000000;">{{movie_2.name}}</div>
+          <div class="col h9" style="color: #000000;">{{movie_3.name}}</div>
+        </div>
+
+        <div class="row" style="background: #ffcc13;">
+          <div class="row" style="background: #ffcc13;">
+            <div id="movie-header-1" class="col movie-header">
+              <div class="movie-watch-button">
+                <a href="{{trailer_redirect_link_1}}" class="btn btn-secondary">Watch trailer now!</a>
+              </div>
+            </div>
+            <div id="movie-header-2" class="col movie-header">
+              <div class="movie-watch-button">
+                <a href="{{trailer_redirect_link_2}}" class="btn btn-secondary">Watch trailer now!</a>
+              </div>
+            </div>
+            <div id="movie-header-3" class="col movie-header">
+              <div class="movie-watch-button">
+                <a href="{{trailer_redirect_link_3}}" class="btn btn-secondary">Watch trailer now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </main>
+  </div>
+  </div>
+
+  <footer>
+
+  </footer>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script>
+     var donut1 = document.getElementById("donut1").getAttribute("data-genre");
+    var donut2 = document.getElementById("donut2").getAttribute("data-genre");
+    var donut3 = document.getElementById("donut3").getAttribute("data-genre");
+    var donut4 = document.getElementById("donut4").getAttribute("data-genre");
+    var donut5 = document.getElementById("donut5").getAttribute("data-genre");
+    var donut6 = document.getElementById("donut6").getAttribute("data-genre");
+
+     if (donut1 == "None") {
+      var elem = document.getElementById("donut1");
+      elem.parentNode.removeChild(elem);
+    } 
+    if (donut2 == "None") {
+      var elem = document.getElementById("donut2");
+      elem.parentNode.removeChild(elem);
+    } 
+    if (donut3 == "None") {
+        var elem = document.getElementById("donut3");
+        elem.parentNode.removeChild(elem);
+    } 
+    if (donut4 == "None") {
+        var elem = document.getElementById("donut4");
+        elem.parentNode.removeChild(elem);
+    } 
+    if (donut5 == "None") {
+        var elem = document.getElementById("donut5");
+        elem.parentNode.removeChild(elem);
+    } 
+    if (donut6 == "None") {
+        var elem = document.getElementById("donut6");
+        elem.parentNode.removeChild(elem);
+    }
+  </script>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script type="" src="../../static/js/functions.js"></script>
+
+</html>

@@ -1,0 +1,42 @@
+version: '2'
+
+services:
+
+  backend:
+    container_name: group_1_moviegen_backend
+    image: "continuumio/miniconda3"
+    #command: "chmod +x ./MovieGenerator/startup_backend.sh"
+    build: 
+      context: .
+      #dockerfile: ./Dockerfile_backend
+    entrypoint:
+      ./MovieGenerator/Docker/startup_backend.sh
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../:/MovieGenerator
+    networks:
+      - group_1_moviegen_network
+
+  frontend:
+    container_name: group_1_moviegen_frontend
+    image: "continuumio/miniconda3"
+    build: 
+      context: .
+      #dockerfile: ./Dockerfile_frontend
+    entrypoint:
+      ./MovieGenerator/Docker/startup_frontend.sh
+    depends_on:
+      - "backend"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../:/MovieGenerator
+    ports:
+      - "${PORT}:${PORT}"
+    networks:
+      - group_1_moviegen_network
+
+networks:
+  group_1_moviegen_network:
+    driver: bridge

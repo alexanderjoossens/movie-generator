@@ -1,0 +1,602 @@
+{
+    "creation_time": "Sun Dec 11 20:28:34 2022",
+    "session_id": "bus",
+    "session_timestamps": {
+        "1670787099.52208": {
+            "choice": {
+                "choice": "S.M.A.R.T. Chase",
+                "end_time": 1670788562.9526331
+            },
+            "page_enters": {
+                "index": 1670787099.52208,
+                "qr": 1670787099.5350912,
+                "tinder_index_1": 1670787103.4169698,
+                "tinder_index_2": 1670787286.5449345,
+                "tinder_info_1": 1670787109.3655696,
+                "tinder_info_2": 1670787292.1362302,
+                "tinder_movies_1_0": 1670787139.0412643,
+                "tinder_movies_1_1": 1670787145.1979117,
+                "tinder_movies_1_2": 1670787150.423363,
+                "tinder_movies_1_3": 1670787152.4829195,
+                "tinder_movies_1_4": 1670787153.6230023,
+                "tinder_movies_1_5": 1670787155.2851405,
+                "tinder_movies_1_6": 1670787156.1770391,
+                "tinder_movies_1_7": 1670787156.7751982,
+                "tinder_movies_1_8": 1670787157.8153923,
+                "tinder_movies_1_9": 1670787161.283225,
+                "tinder_movies_2_0": 1670787311.0049536,
+                "tinder_movies_2_1": 1670787318.9192927,
+                "tinder_movies_2_2": 1670787325.0913193,
+                "tinder_movies_2_3": 1670787327.380901,
+                "tinder_movies_2_4": 1670787329.2940671,
+                "tinder_movies_2_5": 1670787330.7380688,
+                "tinder_movies_2_6": 1670787331.9707196,
+                "tinder_movies_2_7": 1670787333.4127939,
+                "tinder_movies_2_8": 1670787334.1797419,
+                "tinder_movies_2_9": 1670787335.0692225,
+                "tinder_start_post_1": 1670787109.3285675,
+                "tinder_start_post_2": 1670787292.0962791
+            },
+            "refresh": [
+                [
+                    1670787558.2556367,
+                    2,
+                    "Gun Shy",
+                    "Gun Shy"
+                ],
+                [
+                    1670787594.9680626,
+                    3,
+                    "S.M.A.R.T. Chase",
+                    "S.M.A.R.T. Chase"
+                ],
+                [
+                    1670787725.6540866,
+                    1,
+                    "War, Inc.",
+                    "Marvel One-Shot: All Hail the King"
+                ],
+                [
+                    1670787729.586952,
+                    3,
+                    "S.M.A.R.T. Chase",
+                    "Killer Bean Forever"
+                ],
+                [
+                    1670787734.6853244,
+                    2,
+                    "Gun Shy",
+                    "Dead Heat"
+                ],
+                [
+                    1670787741.7222037,
+                    1,
+                    "Marvel One-Shot: All Hail the King",
+                    "Lost Boys: The Thirst"
+                ],
+                [
+                    1670787749.9232755,
+                    1,
+                    "Lost Boys: The Thirst",
+                    "Daphne & Velma"
+                ],
+                [
+                    1670787751.2400112,
+                    1,
+                    "Daphne & Velma",
+                    "The Protector"
+                ],
+                [
+                    1670787753.000672,
+                    1,
+                    "The Protector",
+                    "The Matador"
+                ],
+                [
+                    1670787758.1029506,
+                    1,
+                    "The Matador",
+                    "The A-Team"
+                ],
+                [
+                    1670787759.21707,
+                    1,
+                    "The A-Team",
+                    "Operation Fortune: Ruse de Guerre"
+                ],
+                [
+                    1670787762.488082,
+                    2,
+                    "Dead Heat",
+                    "Dead Heat"
+                ],
+                [
+                    1670787764.8283527,
+                    2,
+                    "Dead Heat",
+                    "Dead Heat"
+                ],
+                [
+                    1670787765.7141578,
+                    2,
+                    "Dead Heat",
+                    "Dead Heat"
+                ],
+                [
+                    1670787766.8651724,
+                    1,
+                    "Operation Fortune: Ruse de Guerre",
+                    "Operation Fortune: Ruse de Guerre"
+                ]
+            ],
+            "result": {
+                "movie_1_index": 14,
+                "movie_2_index": 8,
+                "movie_3_index": 7,
+                "movie_list": [
+                    {
+                        "balance_user1": 86,
+                        "balance_user2": 86,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Fantasy",
+                        "bubble2_genre_user1": 0.51,
+                        "bubble2_genre_user2": 0.49,
+                        "combined_pref": 86,
+                        "imdb_tekst": "In the treacherous frontier city of Samurai Town a ruthless bank robber is sprung from jail by wealthy warlord The Governor whose adopted granddaughter Bernice has gone missing. The Governor offers the prisoner his freedom in exchange for retrieving the runaway. Strapped into a leather suit that will self-destruct within five days the bandit sets off on a journey to find the young woman\u2014and his own path to redemption.",
+                        "name": "Prisoners of the Ghostland",
+                        "poster_path": "/j5HRzcvN1QXZLvwfc3NLxX8XQJY.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Prisoners of the Ghostland"
+                    },
+                    {
+                        "balance_user1": 84,
+                        "balance_user2": 82,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Adventure",
+                        "bubble2_genre_user1": 0.51,
+                        "bubble2_genre_user2": 0.49,
+                        "combined_pref": 83,
+                        "imdb_tekst": "A\u00a0mega-platinum\u00a0aging rock star's supermodel wife is abducted by pirates while vacationing in Chile.",
+                        "name": "Gun Shy",
+                        "poster_path": "/ugzaRtgrf2MBCUawgiE6xayXXIE.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Gun Shy"
+                    },
+                    {
+                        "balance_user1": 83,
+                        "balance_user2": 82,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Comedy",
+                        "bubble2_genre_user1": 0.42857142857142855,
+                        "bubble2_genre_user2": 0.5714285714285714,
+                        "combined_pref": 83,
+                        "imdb_tekst": "A washed-up private security agent has to escort a valuable Chinese antique out of Shanghai but is ambushed en route.",
+                        "name": "S.M.A.R.T. Chase",
+                        "poster_path": "/rw5qHjaMTwER15MfwUG13WXQ0Cy.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer S.M.A.R.T. Chase"
+                    },
+                    {
+                        "balance_user1": 83,
+                        "balance_user2": 84,
+                        "bubble1_genre": "Comedy",
+                        "bubble1_genre_user1": 0.42857142857142855,
+                        "bubble1_genre_user2": 0.5714285714285714,
+                        "bubble2_genre": "Drama",
+                        "bubble2_genre_user1": 0.51,
+                        "bubble2_genre_user2": 0.49,
+                        "combined_pref": 84,
+                        "imdb_tekst": "A modern punk adaptation of Shakespeare's classic. Told irreverently this film attempts to impact the viewer in the same way theatre-goers were effected in Shakespeare's time. Bawdy Violent Humorous and Romantic.",
+                        "name": "Tromeo & Juliet",
+                        "poster_path": "/gBUQFzTjaYvnPRzXVsW6Y5mlTWd.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Tromeo & Juliet"
+                    },
+                    {
+                        "balance_user1": 81,
+                        "balance_user2": 81,
+                        "bubble1_genre": "Horror",
+                        "bubble1_genre_user1": 0.6666666666666666,
+                        "bubble1_genre_user2": 0.3333333333333333,
+                        "bubble2_genre": "Action",
+                        "bubble2_genre_user1": 0.5714285714285714,
+                        "bubble2_genre_user2": 0.42857142857142855,
+                        "combined_pref": 81,
+                        "imdb_tekst": "Barry is a talented mechanic and family man whose life is torn apart on the eve of a zombie apocalypse. His sister Brooke is kidnapped by a sinister team of gas-mask wearing soldiers & experimented on by a psychotic doctor. While Brooke plans her escape Barry goes out on the road to find her & teams up with Benny a fellow survivor - together they must arm themselves and prepare to battle their way through hordes of flesh-eating monsters in a harsh Australian bushland.",
+                        "name": "Wyrmwood: Road of the Dead",
+                        "poster_path": "/oyF0zNkTfvodHvkSEs9E88jvQRi.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Wyrmwood: Road of the Dead"
+                    },
+                    {
+                        "balance_user1": 82,
+                        "balance_user2": 80,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Adventure",
+                        "bubble2_genre_user1": 0.51,
+                        "bubble2_genre_user2": 0.49,
+                        "combined_pref": 81,
+                        "imdb_tekst": "War Inc. is set in the future when the fictional desert country of Turaqistan is torn by a riot after a private corporation Tamerlane owned by the former Vice President of the United States has taken over the whole country. Brand Hauser a hit man who suppresses his emotions by gobbling down hot sauce is hired by the corporation's head to kill the CEO of their competitors.",
+                        "name": "War, Inc.",
+                        "poster_path": "/nlGsWWYC9n4lkbIoTXmI42dkJqb.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer War, Inc."
+                    },
+                    {
+                        "balance_user1": 81,
+                        "balance_user2": 79,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Comedy",
+                        "bubble2_genre_user1": 0.42857142857142855,
+                        "bubble2_genre_user2": 0.5714285714285714,
+                        "combined_pref": 80,
+                        "imdb_tekst": "A documentary filmmaker interviews the now-famous Trevor Slattery from behind bars.",
+                        "name": "Marvel One-Shot: All Hail the King",
+                        "poster_path": "/ozXvopXv1TiOTls8zb09dBmu9dt.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Marvel One-Shot: All Hail the King"
+                    },
+                    {
+                        "balance_user1": 80,
+                        "balance_user2": 76,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Adventure",
+                        "bubble2_genre_user1": 0.51,
+                        "bubble2_genre_user2": 0.49,
+                        "combined_pref": 78,
+                        "imdb_tekst": "When things go bad in Beantown top assassin Killer Bean is called to clean-up the mess. Detective Cromwell finds himself in the middle between Killer Bean and mob boss Cappuccino.",
+                        "name": "Killer Bean Forever",
+                        "poster_path": "/6qzFNzWtgc7nH4j4I6odnoJP66H.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Killer Bean Forever"
+                    },
+                    {
+                        "balance_user1": 82,
+                        "balance_user2": 82,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Horror",
+                        "bubble2_genre_user1": 0.6666666666666666,
+                        "bubble2_genre_user2": 0.3333333333333333,
+                        "combined_pref": 82,
+                        "imdb_tekst": "LAPD police officer Roger Mortis is killed while arresting zombies who have been reanimated by the head of Dante Laboratories in order to carry out violent armed robberies.",
+                        "name": "Dead Heat",
+                        "poster_path": "/m9LDoBpKEgucDzyS6w7u6fYut5G.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Dead Heat"
+                    },
+                    {
+                        "balance_user1": 81,
+                        "balance_user2": 81,
+                        "bubble1_genre": "Horror",
+                        "bubble1_genre_user1": 0.6666666666666666,
+                        "bubble1_genre_user2": 0.3333333333333333,
+                        "bubble2_genre": "Action",
+                        "bubble2_genre_user1": 0.5714285714285714,
+                        "bubble2_genre_user2": 0.42857142857142855,
+                        "combined_pref": 81,
+                        "imdb_tekst": "Vampire hunter Edgar Frog is destitute and nearly friendless when the beautiful novelist Gwen Lieber offers him a small fortune to go on a hunt to save her brother from vampires using a new drug called the Thirst which is a mixture of Ecstasy and infected blood. Realising he can't do this alone Edgar turns to his brother Alan Frog to help him save Gwen's brother.",
+                        "name": "Lost Boys: The Thirst",
+                        "poster_path": "/sKeaELcJyoCFzU5QeiIhjbNagIN.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Lost Boys: The Thirst"
+                    },
+                    {
+                        "balance_user1": 79,
+                        "balance_user2": 77,
+                        "bubble1_genre": "Comedy",
+                        "bubble1_genre_user1": 0.42857142857142855,
+                        "bubble1_genre_user2": 0.5714285714285714,
+                        "bubble2_genre": "Horror",
+                        "bubble2_genre_user1": 0.6666666666666666,
+                        "bubble2_genre_user2": 0.3333333333333333,
+                        "combined_pref": 78,
+                        "imdb_tekst": "Before their eventual team-up with Scooby and the gang bright and optimistic Daphne and whip-smart and analytical Velma are both mystery-solving teens who are best friends but have only met online - until now. Daphne has just transferred to Velma's school Ridge Valley High an incredible tech-savvy institute with all the latest gadgets provided by the school's benefactor tech billionaire Tobias Bloom. And while competition is fierce among the students for a coveted internship at Bloom Innovative Daphne and Velma dig beyond all the gadgets and tech to investigate what is causing some of the brightest students in school to disappear - only to emerge again in a zombie-fied state.",
+                        "name": "Daphne & Velma",
+                        "poster_path": "/zG2DHbo2GNxSmcFWqGkAPgS6hC8.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Daphne & Velma"
+                    },
+                    {
+                        "balance_user1": 82,
+                        "balance_user2": 86,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Adventure",
+                        "bubble2_genre_user1": 0.51,
+                        "bubble2_genre_user2": 0.49,
+                        "combined_pref": 84,
+                        "imdb_tekst": "Billy Wong is a New York City cop whose partner is gunned down during a robbery. Billy and his new partner Danny Garoni are working security at a fashion show when a wealthy man's daughter Laura Shapiro is kidnapped. The Federal authorities suspect that Laura's father is involved with Mr. Ko a Hong Kong drug kingpin so the NYC police commissioner sends the two cops to Hong Kong to investigate.",
+                        "name": "The Protector",
+                        "poster_path": "/nQPBESx5J8lAh67iA5A7ILoCgii.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer The Protector"
+                    },
+                    {
+                        "balance_user1": 77,
+                        "balance_user2": 74,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Comedy",
+                        "bubble2_genre_user1": 0.42857142857142855,
+                        "bubble2_genre_user2": 0.5714285714285714,
+                        "combined_pref": 76,
+                        "imdb_tekst": "The life of Danny Wright a salesman forever on the road veers into dangerous and surreal territory when he wanders into a Mexican bar and meets a mysterious stranger Julian who's very likely a hit man. Their meeting sets off a chain of events that will change their lives forever as Wright is suddenly thrust into a far-from-mundane existence that he takes to surprisingly well \u2026 once he gets acclimated to it.",
+                        "name": "The Matador",
+                        "poster_path": "/oJnlAGmrhsg4QrlVKGgP91J6WPu.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer The Matador"
+                    },
+                    {
+                        "balance_user1": 78,
+                        "balance_user2": 75,
+                        "bubble1_genre": "Thriller",
+                        "bubble1_genre_user1": 0.6666666666666666,
+                        "bubble1_genre_user2": 0.3333333333333333,
+                        "bubble2_genre": "Action",
+                        "bubble2_genre_user1": 0.5714285714285714,
+                        "bubble2_genre_user2": 0.42857142857142855,
+                        "combined_pref": 76,
+                        "imdb_tekst": "A group of Iraq War veterans goes on the run from U.S. military forces while they try to clear their names after being framed for a crime they didn't commit. Along the way Col. Hannibal Smith Capt. H.M. \u2018Howling Mad\u2019 Murdock  Sgt. Bosco \u2018B.A.\u2019 Baracus and Lt. Templeton \u2018Faceman\u2019 Peck help out various people they encounter.",
+                        "name": "The A-Team",
+                        "poster_path": "/bkAWEx5g5tvRPjtDQyvIZ7LRxQm.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer The A-Team"
+                    },
+                    {
+                        "balance_user1": 80,
+                        "balance_user2": 77,
+                        "bubble1_genre": "Action",
+                        "bubble1_genre_user1": 0.5714285714285714,
+                        "bubble1_genre_user2": 0.42857142857142855,
+                        "bubble2_genre": "Thriller",
+                        "bubble2_genre_user1": 0.6666666666666666,
+                        "bubble2_genre_user2": 0.3333333333333333,
+                        "combined_pref": 79,
+                        "imdb_tekst": "Five Eyes the international intelligence agency recruits MI6 agent Orson Fortune to prevent the sale of a deadly new weapons technology that threatens to disrupt the world order.",
+                        "name": "Operation Fortune: Ruse de Guerre",
+                        "poster_path": "/xZ9S5TzhAbymNfHr2ZqJmwG5hoT.jpg",
+                        "url_trailer": "https://www.youtube.com/results?search_query=trailer Operation Fortune: Ruse de Guerre"
+                    }
+                ]
+            },
+            "tinder_sessions": {
+                "1": {
+                    "dislike_list": [
+                        "1065",
+                        "6332"
+                    ],
+                    "feedback_list": [
+                        [
+                            1670787145.1689286,
+                            "nolike",
+                            "161"
+                        ],
+                        [
+                            1670787150.3983755,
+                            "like",
+                            "1090"
+                        ],
+                        [
+                            1670787152.454919,
+                            "superlike",
+                            "69"
+                        ],
+                        [
+                            1670787153.595001,
+                            "dislike",
+                            "1065"
+                        ],
+                        [
+                            1670787155.2581398,
+                            "like",
+                            "2262"
+                        ],
+                        [
+                            1670787156.1500363,
+                            "superlike",
+                            "513"
+                        ],
+                        [
+                            1670787156.750189,
+                            "dislike",
+                            "6332"
+                        ],
+                        [
+                            1670787157.789396,
+                            "like",
+                            "3836"
+                        ],
+                        [
+                            1670787161.260224,
+                            "superlike",
+                            "848"
+                        ],
+                        [
+                            1670787162.8595848,
+                            "like",
+                            "519"
+                        ]
+                    ],
+                    "input_movie_list": [
+                        [
+                            "The Lion King",
+                            "161"
+                        ],
+                        [
+                            "Pulp Fiction",
+                            "1090"
+                        ],
+                        [
+                            "Harry Potter and the Philosopher's Stone",
+                            "69"
+                        ],
+                        [
+                            "The Notebook",
+                            "1065"
+                        ],
+                        [
+                            "The Social Network",
+                            "2262"
+                        ],
+                        [
+                            "The Godfather",
+                            "513"
+                        ],
+                        [
+                            "The Fast and the Furious: Tokyo Drift",
+                            "6332"
+                        ],
+                        [
+                            "Home Alone: The Holiday Heist",
+                            "3836"
+                        ],
+                        [
+                            "Saw",
+                            "848"
+                        ],
+                        [
+                            "The Shawshank Redemption",
+                            "519"
+                        ]
+                    ],
+                    "like_list": [
+                        "1090",
+                        "2262",
+                        "3836",
+                        "519"
+                    ],
+                    "like_string": "1065_-1M6332_-1M1090_1M2262_1M3836_1M519_1M69_2M513_2M848_2",
+                    "name": "Thomas",
+                    "nolike_list": [
+                        "161"
+                    ],
+                    "scan_time": 1670787103.418962,
+                    "superlike_list": [
+                        "69",
+                        "513",
+                        "848"
+                    ]
+                },
+                "2": {
+                    "dislike_list": [
+                        "1065",
+                        "848"
+                    ],
+                    "feedback_list": [
+                        [
+                            1670787318.8802948,
+                            "nolike",
+                            "161"
+                        ],
+                        [
+                            1670787325.0583959,
+                            "like",
+                            "1090"
+                        ],
+                        [
+                            1670787327.3400195,
+                            "superlike",
+                            "69"
+                        ],
+                        [
+                            1670787329.2381234,
+                            "dislike",
+                            "1065"
+                        ],
+                        [
+                            1670787330.7020698,
+                            "like",
+                            "2262"
+                        ],
+                        [
+                            1670787331.9247222,
+                            "superlike",
+                            "513"
+                        ],
+                        [
+                            1670787333.2114356,
+                            "superlike",
+                            "6332"
+                        ],
+                        [
+                            1670787334.1167672,
+                            "like",
+                            "3836"
+                        ],
+                        [
+                            1670787334.9912255,
+                            "dislike",
+                            "848"
+                        ],
+                        [
+                            1670787336.3882308,
+                            "like",
+                            "519"
+                        ]
+                    ],
+                    "input_movie_list": [
+                        [
+                            "The Lion King",
+                            "161"
+                        ],
+                        [
+                            "Pulp Fiction",
+                            "1090"
+                        ],
+                        [
+                            "Harry Potter and the Philosopher's Stone",
+                            "69"
+                        ],
+                        [
+                            "The Notebook",
+                            "1065"
+                        ],
+                        [
+                            "The Social Network",
+                            "2262"
+                        ],
+                        [
+                            "The Godfather",
+                            "513"
+                        ],
+                        [
+                            "The Fast and the Furious: Tokyo Drift",
+                            "6332"
+                        ],
+                        [
+                            "Home Alone: The Holiday Heist",
+                            "3836"
+                        ],
+                        [
+                            "Saw",
+                            "848"
+                        ],
+                        [
+                            "The Shawshank Redemption",
+                            "519"
+                        ]
+                    ],
+                    "like_list": [
+                        "1090",
+                        "2262",
+                        "3836",
+                        "519"
+                    ],
+                    "like_string": "1065_-1M848_-1M1090_1M2262_1M3836_1M519_1M69_2M513_2M6332_2",
+                    "name": "William",
+                    "nolike_list": [
+                        "161"
+                    ],
+                    "scan_time": 1670787286.547933,
+                    "superlike_list": [
+                        "69",
+                        "513",
+                        "6332"
+                    ]
+                }
+            }
+        }
+    }
+}

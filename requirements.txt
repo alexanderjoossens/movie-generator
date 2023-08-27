@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+scikit-learn
+flask
+flask-qrcode
+Flask-Session
+redis
+Flask-SocketIO
+zmq
+opendatasets
+python-dotenv
+flask_monitoringdashboard
+
